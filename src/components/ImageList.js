@@ -6,8 +6,8 @@ const ImageList = (props) => {
     <div className="choices">
       {props.images.map((image) => {
         return (
-          <li key={image}>
-            <img src={image.sndImg} alt={image.sndName} class="image" />
+          <li key={image} class="images">
+            <img src={image.img} alt={image.name} class="image" />
           </li>
         );
       })}

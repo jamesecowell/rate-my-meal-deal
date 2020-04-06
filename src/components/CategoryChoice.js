@@ -7,8 +7,10 @@ const CategoryChoice = (props) => {
       <h2>{props.category}</h2>
       {props.choices.map((choice) => {
         return (
-          <li key={choice}>
-            <p>{choice}</p>
+          <li key={choice} class="category">
+            <p onClick={props.chooseCategory} name="sandwiches">
+              {choice}
+            </p>
           </li>
         );
       })}
